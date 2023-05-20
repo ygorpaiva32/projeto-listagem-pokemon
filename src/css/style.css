@@ -1,0 +1,149 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #a9a9a9;
+  color: #333333;
+}
+
+body.modo-escuro{
+  background-color: #000080;
+  color: #f5f5f5;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+   list-style: none; 
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+ } 
+
+header .logo,
+header .imagem-botao{
+  width: 30px;
+  transition: .2s ease-in-out;
+  padding-top: 19px;
+}
+
+header #botao-alterar-tema{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  
+}
+
+
+.pokemon {
+  width: 150px;
+}
+main{
+  padding: 25px;
+}
+
+main .listagem-pokemon{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+main .cartao-pokemon{
+  background-color: #87CEFA;
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+
+}
+
+main .cartao-pokemon:hover{
+  background-color: #00BFFF;
+}
+
+.modo-escuro .cartao-pokemon{
+  background-color: darkgray;
+}
+
+main .cartao-pokemon .informacoes{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #333333;
+  border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+main .cartao-pokemon .gif{
+  width: 75px;
+  height: 75px;
+}
+
+main .cartao-pokemon .tipos{
+  display: flex;
+  gap: 15px;
+}
+
+main .cartao-pokemon .tipos{
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.grama{
+  background-color: #7ac74c; 
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.veneno{
+  background-color: #aa80ff;;
+  border-radius: 10px;
+  padding: 8px;
+}
+.fogo{
+  background-color: #FFA500;
+  border-radius: 10px;
+  padding: 8px;
+}
+.agua{
+  background-color: #6390f0;
+  border-radius: 10px;
+  padding: 8px;
+}
+.inseto{
+  background-color: #a6b91a;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+main .descricao{
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  padding-right: 10px;
+}
